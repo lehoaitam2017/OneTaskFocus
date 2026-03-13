@@ -9,10 +9,24 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
-    var timestamp: Date
-    
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+final class FocusSession {
+    var taskTitle: String
+    var sessionNote: String
+    var duration: Int
+    var startedAt: Date
+    var endedAt: Date
+
+    init(
+        taskTitle: String,
+        sessionNote: String = "",
+        duration: Int,
+        startedAt: Date,
+        endedAt: Date
+    ) {
+        self.taskTitle = taskTitle
+        self.sessionNote = sessionNote
+        self.duration = duration
+        self.startedAt = startedAt
+        self.endedAt = endedAt
     }
 }

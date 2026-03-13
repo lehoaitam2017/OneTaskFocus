@@ -12,7 +12,7 @@ import SwiftData
 struct OneTaskFocusApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            FocusSession.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct OneTaskFocusApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppRootView()
         }
         .modelContainer(sharedModelContainer)
     }
