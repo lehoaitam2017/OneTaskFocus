@@ -4,7 +4,7 @@ If you need help with OneTaskFocus, use the support contact below.
 
 ## Contact
 
-- Email: `support@example.com`
+- Email: `datamuse.ai@gmail.com`
 
 Replace the email above with your real support address before publishing the app.
 
